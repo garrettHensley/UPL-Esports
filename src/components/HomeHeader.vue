@@ -1,12 +1,15 @@
 <template>
   <div class="home container text-center p-5">
     <b-container class="m-3">
+      <!-- Logo and text -->
       <b-row>
         <b-col class="text-light">
-          <b-img src="../logo.png" id="logo" fluid alt="Logo" /> <span class="lead">Esports</span>
+          <b-img src="../logo.png" id="logo" fluid alt="Logo" />
+          <span class="lead">Esports</span>
         </b-col>
       </b-row>
     </b-container>
+    <!-- Portal for all current games -->
     <b-row>
       <b-col>
         <b-card-group deck>

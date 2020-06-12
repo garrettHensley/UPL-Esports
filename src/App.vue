@@ -8,7 +8,9 @@
 <script>
 import Nav from "@/components/Nav.vue";
 
-document.title = "UPL Esports"
+
+// Website title
+document.title = "UPL Esports";
 
 export default {
   components: {
@@ -18,13 +20,11 @@ export default {
 </script>
 
 <style>
-@import './assets/style.css';
+@import "./assets/style.css";
 
 html {
-  
 }
 html body {
- 
   background-color: #292828;
 }
 </style>
