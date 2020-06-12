@@ -8,6 +8,8 @@
 <script>
 import Nav from "@/components/Nav.vue";
 
+document.title = "UPL Esports"
+
 export default {
   components: {
     Nav,
