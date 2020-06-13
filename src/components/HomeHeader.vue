@@ -20,7 +20,8 @@
             title="Artifact"
             style="max-width: 20rem; height: 25rem;"
             id="artifact"
-          ></b-card>
+          >
+          </b-card>
           <b-card title="Prophecy" style="max-width: 20rem;" id="prophecy">
           </b-card>
         </b-card-group>
@@ -60,7 +61,8 @@ export default {
   width: 10em;
 }
 h4 {
-  backdrop-filter: blur(0.5rem);
+  backdrop-filter: blur(0.5rem) saturate(80%);
+
   font-size: 2rem;
 }
 </style>
