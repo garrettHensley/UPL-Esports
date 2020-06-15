@@ -13,16 +13,22 @@
     <b-row>
       <b-col>
         <b-card-group deck>
-          <b-card title="Underlords" style="max-width: 20rem;" id="underlords">
-            <p></p>
+          <b-card title="Prophecy" style="max-width: 20rem;" id="prophecy">
           </b-card>
+          <b-card title="Underlords" style="max-width: 20rem;" id="underlords">
+            <a
+              href="#UL"
+              style="position: absolute;
+top: 0; left: 0;
+height: 100%; width: 100%;"
+            ></a>
+          </b-card>
+
           <b-card
             title="Artifact"
             style="max-width: 20rem; height: 25rem;"
             id="artifact"
           >
-          </b-card>
-          <b-card title="Prophecy" style="max-width: 20rem;" id="prophecy">
           </b-card>
         </b-card-group>
       </b-col>
