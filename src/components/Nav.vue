@@ -5,7 +5,7 @@
         <b-nav-item href="#"
           ><router-link to="/" class="text-light">Home</router-link></b-nav-item
         >
-        <b-nav-item href="#">
+        <b-nav-item href="#" disabled>
           <router-link to="/about" class="text-light">About</router-link>
         </b-nav-item>
       </b-navbar-nav>
