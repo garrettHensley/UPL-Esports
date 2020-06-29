@@ -1,9 +1,8 @@
 <template>
-  <b-container id="logo-container" class="m-3">
+  <b-container id="logo-container" class="my-3">
     <!-- Logo and text -->
 
-        <b-img src="../logo.png" id="logo" fluid alt="Logo" />
-
+    <b-img src="../logo.png" id="logo" fluid alt="Logo" />
   </b-container>
 </template>
 

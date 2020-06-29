@@ -2,7 +2,6 @@
   <div id="app">
     <Nav />
     <router-view />
-    <link rel="icon" href="../icon.ico" />
   </div>
 </template>
 
@@ -17,6 +16,7 @@ export default {
   components: {
     Nav,
   },
+  
 };
 </script>
 

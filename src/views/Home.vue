@@ -1,22 +1,19 @@
 <template>
   <div>
     <HomeHeader />
-    <ULplaceholder />
-    <ARplaceholder />
+    <PlaceholderContainer />
   </div>
 </template>
 
 <script>
 import HomeHeader from "@/components/HomeHeader.vue";
-import ULplaceholder from '@/components/ULplaceholder.vue';
-import ARplaceholder from '@/components/ARplaceholder.vue';
+import PlaceholderContainer from '@/components/PlaceholderContainer.vue';
 
 export default {
   name: "Home",
   components: {
     HomeHeader,
-    ULplaceholder,
-    ARplaceholder,
+    PlaceholderContainer
   },
 };
 </script>

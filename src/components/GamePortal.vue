@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <b-card-group deck class="mx-auto">
+  <b-container>
+    <b-card-group>
       <b-card
         title="Underlords"
         style="max-width: 20rem; height: 25rem;"
@@ -36,11 +36,14 @@
       >
       </b-card>
     </b-card-group>
-  </div>
+  </b-container>
 </template>
 
 <script>
-export default {};
+export default {
+  
+
+};
 </script>
 
 <style scoped>
