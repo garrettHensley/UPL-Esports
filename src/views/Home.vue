@@ -7,7 +7,7 @@
 
 <script>
 import HomeHeader from "@/components/HomeHeader.vue";
-import PlaceholderContainer from '@/components/PlaceholderContainer.vue';
+import PlaceholderContainer from "@/components/PlaceholderContainer.vue";
 
 export default {
   name: "Home",
@@ -15,6 +15,14 @@ export default {
     HomeHeader,
     PlaceholderContainer
   },
+  mounted() {
+    //do nothing
+  },
+  methods: {
+    setTitle: function() {
+      document.title = "UPL Esports | Competitive & Inclusive Gaming"
+    }
+  }
 };
 </script>
 <style scoped></style>
