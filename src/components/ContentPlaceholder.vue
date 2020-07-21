@@ -1,6 +1,6 @@
 <template>
   <b-container
-    fluid
+    
     id="AR"
     class="text-light"
     :style="{ backgroundImage: `url(${stuff.background})` }"
