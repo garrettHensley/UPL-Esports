@@ -12,6 +12,7 @@
             </a>
           </em>
         </p>
+        <hr>
       </b-container>
       <b-container id="article" class="py-1">
         <vue-markdown :source="article.content"></vue-markdown>
@@ -64,5 +65,10 @@ export default {
 }
 .accent {
   color: #ec00de;
+}
+</style>
+<style>
+hr {
+  border: .05em solid #4fc8ff;
 }
 </style>

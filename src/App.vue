@@ -34,4 +34,5 @@ html body {
 .accent {
   color: #ec00de;
 }
+
 </style>
