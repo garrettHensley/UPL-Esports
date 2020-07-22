@@ -28,4 +28,10 @@ html {
 html body {
   background-color: #292828;
 }
+.main {
+  color: #4fc8ff;
+}
+.accent {
+  color: #ec00de;
+}
 </style>
