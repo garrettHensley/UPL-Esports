@@ -18,17 +18,22 @@
           <b-container
             v-for="article in news"
             :key="article.index"
-            class="articles border-bottom border-dark"
+            class="articles border-bottom border-dark hover"
+            href="http://google.com"
           >
-            <a :href="'news/'+article.id" class="text-light">
+            <a :href="'#/news/'+article.id" class="text-light">
               <b-row>
                 <b-col cols="1" class="d-flex align-items-center justify-content-center p-0">
                   <b-img src="../logo.png" class="preview-image" fluid alt="Logo" />
                 </b-col>
                 <b-col class="p-1">
-                  <h1>{{article.title}}</h1>
-                  <p>
-                    <em>{{article.description}}</em>
+                  <h1 class="main">{{article.title}}</h1>
+                  <p class="lead accent mb-0">{{article.description}}</p>
+                  <p class="mb-1">
+                    <span>{{article.date}}</span> by
+                    <em>
+                      <strong class="lead main mx-1">{{article.author}}</strong>
+                    </em>
                   </p>
                 </b-col>
               </b-row>
@@ -44,16 +49,26 @@
 .articles {
   background-color: #2a3032;
 }
+a {
+  text-decoration: none;
+}
+.hover:hover {
+  box-shadow: .2em .2em .2em .2em rgba(37, 37, 37, 0.315); 
+}
 </style>
 
 <script>
 import axios from "axios";
 import Article from "@/components/Article.vue";
+// http://localhost:8080/news/#/news/2
+// http://localhost:8080/#/news/2
+// works apprently?
 
 export default {
   data() {
     return {
-      news: null
+      news: null,
+      destinationID: this.$route.params.id
     };
   },
   components: {
@@ -68,6 +83,7 @@ export default {
   },
   mounted() {
     console.log(this.$route.params.id);
+    console.log("this.$route.params.id");
     this.setTitle();
     axios
       .get("https://uplesports.herokuapp.com/articles")

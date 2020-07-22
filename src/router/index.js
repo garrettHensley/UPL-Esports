@@ -30,7 +30,7 @@ const routes = [
   },
   {
     path: "/news/:id",
-    name: "News by Id",
+    name: "NewsID",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
@@ -40,7 +40,6 @@ const routes = [
 ];
 
 const router = new VueRouter({
-  mode: 'history',
   routes
 });
 
