@@ -1,21 +1,22 @@
 <template>
   <div>
-    <ContentPlaceholder :stuff="Underlords" />
-    <ContentPlaceholder :stuff="Artifact" />
+    <ContentPlaceholder id="UL" :stuff="Underlords" />
+    <ContentPlaceholder id="AR" :stuff="Artifact" />
+    <ContentPlaceholder id="TFT" :stuff="TFT" />
   </div>
 </template>
 
 <script>
-import ContentPlaceholder from '@/components/ContentPlaceholder.vue';
+import ContentPlaceholder from "@/components/ContentPlaceholder.vue";
 export default {
   components: {
-    ContentPlaceholder,
+    ContentPlaceholder
   },
   data() {
     return {
       Artifact: {
         title: "Artifact",
-        background: '~@/assets/wallpaper/AR.jpg',
+        background: "~@/assets/wallpaper/AR.jpg",
         content: `<p>
       <em>
         A collaboration between legendary card game designer Richard Garfield
@@ -37,7 +38,7 @@ export default {
       <em>
         UPL is currently waiting for Artifact 2.0 to enter open beta, before we begin hosting tournaments. 
       </em>
-    </p>`,
+    </p>`
       },
       Underlords: {
         title: "Underlords",
@@ -58,9 +59,22 @@ export default {
         seasons, gathering in hundreds of players weekly for competitive play.
       </em>
     </p>`
+      },
+      TFT: {
+        title: "Teamfight Tactics",
+        content: `<p>
+      <em>
+        Assemble an army of your favorite champions in Teamfight Tactics, the PvP strategy autobattler from the studio behind League of Legends.
+      </em>
+    </p>
+    <p>
+      <em>
+        In Teamfight Tactics, you’ll draft, deploy, and upgrade from a revolving roster of League of Legends champions in a round-based battle for survival. Band together with Rebels or devastate with Dark Stars—the strategy is all up to you.
+      </em>
+    </p>`
       }
     };
-  },
+  }
 };
 </script>
 

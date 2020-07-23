@@ -8,7 +8,7 @@
     -->
     <div v-if="$route.params.id">
       <Article :article="
-      news.find(element => element.id==$route.params.id)
+      getArticle()
       " />
     </div>
     <div v-else>
@@ -53,7 +53,7 @@ a {
   text-decoration: none;
 }
 .hover:hover {
-  box-shadow: .2em .2em .2em .2em rgba(37, 37, 37, 0.315); 
+  box-shadow: 0.2em 0.2em 0.2em 0.2em rgba(37, 37, 37, 0.315);
 }
 </style>
 
@@ -75,19 +75,35 @@ export default {
     Article
   },
   methods: {
-    setTitle: function() {
-      if (!this.$route.params.id) {
-        document.title = "News - UPL Esports";
-      }
+    getArticle: function() {
+      if (this.$route.params.id) {
+        return this.news.find(element => element.id == this.$route.params.id);
+      } else return undefined;
     }
   },
   mounted() {
-    console.log(this.$route.params.id);
-    console.log("this.$route.params.id");
-    this.setTitle();
+    console.log("hello");
     axios
       .get("https://uplesports.herokuapp.com/articles")
       .then(reponse => (this.news = reponse.data));
+
+    // ⌛ EVENTUALLY need to rework this so not everything is loaded up if 💲route.param.id is truthy, and only load a bit of that info ⌛
+    //⌛ the way it is now will become growingly problematic the more articles and content we have ⌛
+  },
+  metaInfo: {
+    title: "News & Esports Info for Dota Underlords, Artifact, and more",
+    meta: [
+      { name: "twitter:card", content: "summary" }, //need to make all this shit dynamic eventually
+      {
+        name: "twitter:title",
+        content: "News - UPL Esports"
+      },
+      {
+        name: "twitter:description",
+        content: "News & Esports Info for Dota Underlords, Artifact, and more."
+      },
+      { name: "twitter:image", content: "http://uplesports.com/logo.png" }
+    ]
   }
 };
 </script>

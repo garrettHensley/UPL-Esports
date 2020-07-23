@@ -12,7 +12,7 @@
             </a>
           </em>
         </p>
-        <hr>
+        <hr />
       </b-container>
       <b-container id="article" class="py-1">
         <vue-markdown :source="article.content"></vue-markdown>
@@ -47,14 +47,6 @@ export default {
   },
   components: {
     VueMarkdown
-  },
-  mounted() {
-    this.setTitle(`${this.article.title} | UPL Esports | News`);
-  },
-  methods: {
-    setTitle: function(str) {
-      document.title = str;
-    }
   }
 };
 </script>
@@ -69,6 +61,6 @@ export default {
 </style>
 <style>
 hr {
-  border: .05em solid #4fc8ff;
+  border: 0.05em solid #4fc8ff;
 }
 </style>
