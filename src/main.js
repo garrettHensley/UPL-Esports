@@ -1,6 +1,9 @@
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
+import Meta from 'vue-meta'
+
+Vue.use(Meta)
 
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 
@@ -18,6 +21,11 @@ import "bootstrap-vue/dist/bootstrap-vue.css";
 Vue.config.productionTip = false;
 
 new Vue({
+  el: '#app',
   router,
-  render: h => h(App)
-}).$mount("#app");
+  render: h => h(App),
+  mounted() {
+    // You'll need this for renderAfterDocumentEvent.
+    document.dispatchEvent(new Event('render-event'))
+  }
+})

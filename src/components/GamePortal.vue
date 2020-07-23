@@ -1,5 +1,5 @@
 <template>
-  <b-container>
+  <b-container class="mt-4">
     <b-card-group>
       <b-card
         title="Underlords"
@@ -29,21 +29,24 @@
         ></a>
       </b-card>
       <b-card
-        title="Prophecy"
+        title="Teamfight Tactics"
         style="max-width: 20rem; height: 25rem;"
-        id="prophecy"
+        id="teamfighttactics"
         class="mx-auto"
       >
+        <a
+          href="#TFT"
+          style="position: absolute;
+              top: 0; left: 0;
+              height: 100%; width: 100%;"
+        ></a>
       </b-card>
     </b-card-group>
   </b-container>
 </template>
 
 <script>
-export default {
-  
-
-};
+export default {};
 </script>
 
 <style scoped>
@@ -59,10 +62,10 @@ export default {
   color: white;
   padding-top: 5em;
 }
-#prophecy {
-  background-image: url("~@/assets/unknown.png");
+#teamfighttactics {
+  background-image: url("~@/assets/TFTCard.jpg");
   background-size: cover;
-  background-position-x: -14em;
+  background-position-x: -20em;
   color: white;
   padding-top: 5em;
 }

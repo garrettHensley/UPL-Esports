@@ -1,8 +1,6 @@
 <template>
   <b-container
-    
-    id="AR"
-    class="text-light"
+    class="text-light cardStyle"
     :style="{ backgroundImage: `url(${stuff.background})` }"
   >
     <h1 class="display-4">{{ stuff.title }}</h1>
@@ -13,15 +11,15 @@
 <script>
 export default {
   props: {
-    stuff: Object,
+    stuff: Object
   },
   data() {
     return {
       background: {
-        backgroundImage: `url(${require(this.stuff.background)})`,
-      },
+        backgroundImage: `url(${require(this.stuff.background)})`
+      }
     };
-  },
+  }
 };
 
 /*
@@ -34,7 +32,7 @@ background-image: linear-gradient(
 </script>
 
 <style scoped>
-#AR {
+.cardStyle {
   background-position: 10rem;
 }
 </style>

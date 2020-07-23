@@ -13,8 +13,10 @@
     "bootstrap": "^4.5.0",
     "bootstrap-vue": "^2.15.0",
     "core-js": "^3.6.5",
+    "prerender-spa-plugin": "^3.4.0",
     "vue": "^2.6.11",
     "vue-markdown": "^2.2.4",
+    "vue-meta": "^2.4.0",
     "vue-router": "^3.2.0",
     "vue-simple-markdown": "^1.1.4"
   },
