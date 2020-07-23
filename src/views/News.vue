@@ -21,7 +21,7 @@
             class="articles border-bottom border-dark hover"
             href="http://google.com"
           >
-            <a :href="'#/news/'+article.id" class="text-light">
+            <a :href="'/news/'+article.id" class="text-light">
               <b-row>
                 <b-col cols="1" class="d-flex align-items-center justify-content-center p-0">
                   <b-img src="../logo.png" class="preview-image" fluid alt="Logo" />

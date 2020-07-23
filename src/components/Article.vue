@@ -25,7 +25,7 @@
       </b-container>
     </div>
     <div class="text-center mt-2">
-      <b-button href="/#/news/" size="lg">Back</b-button>
+      <b-button href="/news/" size="lg">Back</b-button>
     </div>
   </b-container>
 </template>
