@@ -25,6 +25,18 @@
       </b-container>
     </div>
     <div class="text-center mt-2">
+      <ShareNetwork
+        network="twitter"
+        :url="`https://uplesports.com${$route.path}`"
+        :title="`${article.title} | UPL Esports`"
+        quote="The hot reload is so fast it\'s near instant. - Evan You"
+        hashtags="esports,underlords"
+        :twitter-user="article.author"
+      >
+        <a href class="lead">Share on Twitter</a>
+      </ShareNetwork>
+    </div>
+    <div class="text-center mt-2">
       <b-button href="/news/" size="lg">Back</b-button>
     </div>
   </b-container>
@@ -45,8 +57,16 @@ export default {
   props: {
     article: Object
   },
+  data() {
+    return {
+      something: "nothing"
+    };
+  },
   components: {
     VueMarkdown
+  },
+  metaInfo() {
+    return { title: this.article.title };
   }
 };
 </script>
@@ -58,9 +78,14 @@ export default {
 .accent {
   color: #ec00de;
 }
-</style>
-<style>
 hr {
   border: 0.05em solid #4fc8ff;
+}
+.btn {
+  background-color: #4fc8ff;
+}
+.btn:hover,
+.btn:focus {
+  background-color: #ec00de;
 }
 </style>
