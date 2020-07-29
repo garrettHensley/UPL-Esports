@@ -17,12 +17,12 @@
       </b-navbar-nav>
       <b-navbar-nav class="ml-auto text-light">
         <b-nav-item href="http://twitter.com/uplesports" target="_blank">
-          <b-img src="../twitter.png" class="nav-image" fluid />
+          <b-img src="../twitter.png" class="nav-image" alt="Twitter" fluid />
         </b-nav-item>
-        <b-nav-item href="http://discord.gg/7BTS6MZ " target="_blank">
+        <b-nav-item href="http://discord.gg/7BTS6MZ" alt="Discord" target="_blank">
           <b-img src="../discord.png" class="nav-image" fluid />
         </b-nav-item>
-        <b-nav-item href="http://twitch.tv/uplesports" target="_blank">
+        <b-nav-item href="http://twitch.tv/uplesports" alt="Twitch" target="_blank">
           <b-img src="../twitch.png" class="nav-image" fluid />
         </b-nav-item>
       </b-navbar-nav>
