@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
     <Nav />
     <router-view />
   </div>

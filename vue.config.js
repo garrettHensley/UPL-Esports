@@ -11,7 +11,7 @@ module.exports = {
           // Absolute path to compiled SPA
           path.join(__dirname, 'dist'),
           // List of routes to prerender
-          ['/', '/news', '/news/2', '/news/4']
+          ['/', '/news']
         ),
       ]
     }
