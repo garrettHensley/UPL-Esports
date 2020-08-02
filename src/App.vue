@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
     <Nav />
     <router-view />
   </div>
@@ -39,10 +40,14 @@ export default {
 <style>
 @import "./assets/style.css";
 
-html {
-}
 html body {
   background-color: #292828;
+}
+html hr {
+  border: 0.05em solid #4fc8ff;
+}
+html a {
+  text-decoration: none;
 }
 .main {
   color: #4fc8ff;

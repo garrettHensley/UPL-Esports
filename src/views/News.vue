@@ -21,10 +21,13 @@
             class="articles border-bottom border-dark hover"
             href="http://google.com"
           >
-            <a :href="'/news/'+article.id" class="text-light">
+            <a :href="'/news/'+article.id" class="text-light text-decoration-none">
               <b-row>
-                <b-col cols="1" class="d-flex align-items-center justify-content-center p-0">
-                  <b-img src="../logo.png" class="preview-image" fluid alt="Logo" />
+                <b-col
+                  cols="1"
+                  class="p-0 cols-xs-0 d-none d-sm-flex justify-content-center align-items-center"
+                >
+                  <b-img src="../logo.png" class="preview-image col-xs-12" fluid alt="Logo" />
                 </b-col>
                 <b-col class="p-1">
                   <h1 class="main">{{article.title}}</h1>
@@ -53,7 +56,7 @@ a {
   text-decoration: none;
 }
 .hover:hover {
-  box-shadow: 0.2em 0.2em 0.2em 0.2em rgba(37, 37, 37, 0.315);
+  box-shadow: 0.1em 0.5em 1em 1em rgba(58, 58, 58, 0.315);
 }
 </style>
 
@@ -85,7 +88,7 @@ export default {
     console.log("hello");
     axios
       .get("https://uplesports.herokuapp.com/articles")
-      .then(reponse => (this.news = reponse.data));
+      .then(reponse => (this.news = reponse.data.reverse()));
 
     // ⌛ EVENTUALLY need to rework this so not everything is loaded up if 💲route.param.id is truthy, and only load a bit of that info ⌛
     //⌛ the way it is now will become growingly problematic the more articles and content we have ⌛
