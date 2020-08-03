@@ -32,7 +32,7 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/News.vue")
+      import(/* webpackChunkName: "article" */ "../views/News.vue")
   },
   {
     path: "/scoreboard",
@@ -41,7 +41,7 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Scoreboard.vue")
+      import(/* webpackChunkName: "scoreboard" */ "../views/Scoreboard.vue")
   }
 ];
 

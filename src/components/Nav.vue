@@ -17,13 +17,13 @@
       </b-navbar-nav>
       <b-navbar-nav class="ml-auto text-light">
         <b-nav-item href="http://twitter.com/uplesports" target="_blank">
-          <b-img :src="img.twitter" class="nav-image" alt="Twitter" fluid />
+          <img :src="`${publicPath}twitter.png`" class="nav-image" alt="Twitter" fluid />
         </b-nav-item>
         <b-nav-item href="http://discord.gg/7BTS6MZ" alt="Discord" target="_blank">
-          <b-img :src="img.discord" class="nav-image" fluid />
+          <img :src="`${publicPath}discord.png`" class="nav-image" fluid />
         </b-nav-item>
         <b-nav-item href="http://twitch.tv/uplesports" alt="Twitch" target="_blank">
-          <b-img :src="img.twitch" class="nav-image" fluid />
+          <img :src="`${publicPath}twitch.png`" class="nav-image" fluid />
         </b-nav-item>
       </b-navbar-nav>
     </b-navbar>
@@ -35,10 +35,11 @@ export default {
   data() {
     return {
       img: {
-        twitter: require("@/assets/twitter.png"),
-        discord: require("@/assets/discord.png"),
-        twitch: require("@/assets/twitch.png")
-      }
+        //twitter: require("@/assets/twitter.png"),
+        //discord: require("@/assets/discord.png"),
+        //twitch: require("@/assets/twitch.png")
+      },
+      publicPath: process.env.BASE_URL
     };
   }
 };
