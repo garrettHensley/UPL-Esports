@@ -1,9 +1,9 @@
 <template>
-  <div id="app">
+  <b-container fluid id="app">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
     <Nav />
     <router-view />
-  </div>
+  </b-container>
 </template>
 
 <script>
@@ -54,5 +54,8 @@ html a {
 }
 .accent {
   color: #ec00de;
+}
+.container-fluid {
+  padding: 0 !important;
 }
 </style>

@@ -8,12 +8,6 @@
         <b-nav-item href="#">
           <router-link to="/news" class="text-light">News</router-link>
         </b-nav-item>
-        <b-nav-item href="#" disabled>
-          <router-link to="/scoreboard" class="text-muted">Scoreboard</router-link>
-        </b-nav-item>
-        <b-nav-item href="#" disabled>
-          <router-link to="/about" class="text-muted">About</router-link>
-        </b-nav-item>
       </b-navbar-nav>
       <b-navbar-nav class="ml-auto text-light">
         <b-nav-item href="http://twitter.com/uplesports" target="_blank">

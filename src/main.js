@@ -3,6 +3,11 @@ import App from "./App.vue";
 import router from "./router";
 import Meta from 'vue-meta'
 import VueSocialSharing from 'vue-social-sharing'
+import VueGtag from "vue-gtag";
+
+Vue.use(VueGtag, {
+  config: { id: "UA-173554771-1" }
+});
 
 Vue.use(VueSocialSharing)
 Vue.use(Meta)

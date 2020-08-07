@@ -1,19 +1,19 @@
 <template>
-  <div>
+  <b-container>
     <HomeHeader />
-    <PlaceholderContainer />
-  </div>
+    <NewHome />
+  </b-container>
 </template>
 
 <script>
 import HomeHeader from "@/components/HomeHeader.vue";
-import PlaceholderContainer from "@/components/PlaceholderContainer.vue";
+import NewHome from "@/components/NewHome.vue";
 
 export default {
   name: "Home",
   components: {
     HomeHeader,
-    PlaceholderContainer
+    NewHome
   },
   mounted() {
     //do nothing
