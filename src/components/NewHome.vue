@@ -25,8 +25,8 @@ import Events from "@/components/Events.vue";
 export default {
   components: {
     News,
-    Events
-  }
+    Events,
+  },
 };
 </script>
 <style>

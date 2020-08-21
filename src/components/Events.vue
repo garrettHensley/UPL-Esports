@@ -10,14 +10,14 @@
         class="card mb-2"
       >
         <b-card-text class="small">
-          <em>{{event.Date.substring(0,10)}}</em>
+          <em>{{ event.Date.substring(0, 10) }}</em>
         </b-card-text>
-        <b-card-text>{{event.Description}}</b-card-text>
+        <b-card-text>{{ event.Description }}</b-card-text>
         <b-card-text v-if="event.PrizePool">
           <em>
             Prize:
             <span v-if="event.PrizePool.isNAN">$</span>
-            {{event.PrizePool}}
+            {{ event.PrizePool }}
           </em>
         </b-card-text>
       </b-card>
@@ -27,17 +27,16 @@
 
 <script>
 import axios from "axios";
-
 export default {
   data() {
     return {
-      events: null
+      events: null,
     };
   },
   mounted() {
     axios
       .get("https://uplesports.herokuapp.com/events")
-      .then(response => (this.events = response.data));
+      .then((response) => (this.events = response.data));
   },
   methods: {
     getGame: function(game) {
@@ -45,8 +44,8 @@ export default {
         case "Underlords":
           return "Dota Underlords";
       }
-    }
-  }
+    },
+  },
 };
 </script>
 <style scoped>
@@ -64,4 +63,3 @@ export default {
   color: #ec00de;
 }
 </style>
-
