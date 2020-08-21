@@ -1,20 +1,37 @@
 <template>
-  <div class="home container text-center p-1 pb-4">
-    <!-- Logo and text -->
-    <HomeHeaderLogo />
-    <!-- Portal for all current games -->
-  </div>
+  <b-jumbotron class="border-bottom mb-4">
+    <b-row>
+      <b-col class="text-center" cols="12" xl="6">
+        <upl-logo />
+      </b-col>
+      <b-col class="text-center p-4">
+        <h2 class="main">Home of Underlords Pro League</h2>
+        <Twitch />
+      </b-col>
+    </b-row>
+  </b-jumbotron>
 </template>
 
 <script>
-import HomeHeaderLogo from "@/components/HomeHeaderLogo.vue";
-
+import Twitch from "@/components/Twitch.vue";
+import UplLogo from "@/components/UplLogo.vue";
 export default {
-  name: "Home",
   components: {
-    HomeHeaderLogo
-  }
+    Twitch,
+    UplLogo,
+  },
 };
 </script>
+
 <style scoped>
+.jumbotron {
+  background-color: transparent;
+  margin-bottom: 0;
+}
+.border-bottom {
+  border-bottom: #ec00de 1px solid !important;
+}
+h2 {
+  font-weight: 100;
+}
 </style>

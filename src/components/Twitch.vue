@@ -1,12 +1,26 @@
 <template>
-  <div></div>
+  <b-container class="text-center d-none d-xl-block my-3">
+    <vue-twitch-player
+      :channel="channel"
+      width="800"
+      height="450"
+    ></vue-twitch-player>
+  </b-container>
 </template>
 
 <script>
-import Twitch from "https://embed.twitch.tv/embed/v1.js";
+import VueTwitchPlayer from "vue-twitch-player";
+
 export default {
-  methods: {
-    player: function() {}
-  }
+  // ...
+  components: {
+    VueTwitchPlayer,
+  },
+  data() {
+    return {
+      channel: "uplesports",
+    };
+  },
+  // ...
 };
 </script>
