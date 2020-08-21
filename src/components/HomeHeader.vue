@@ -8,13 +8,11 @@
 
 <script>
 import HomeHeaderLogo from "@/components/HomeHeaderLogo.vue";
-
 export default {
   name: "Home",
   components: {
-    HomeHeaderLogo
-  }
+    HomeHeaderLogo,
+  },
 };
 </script>
-<style scoped>
-</style>
+<style scoped></style>
