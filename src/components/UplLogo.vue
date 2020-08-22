@@ -1,8 +1,9 @@
 <template>
-  <b-container id="logo-container" class="my-3">
+  <b-container id="logo-container">
     <!-- Logo and text -->
 
     <b-img src="../logo.png" id="logo" fluid alt="Logo" />
+    <h1 class="display-3 text-light">Esports</h1>
   </b-container>
 </template>
 
@@ -13,8 +14,5 @@ export default {};
 <style scoped>
 #logo-container {
   padding: 0;
-}
-#logo {
-  width: 10em;
 }
 </style>

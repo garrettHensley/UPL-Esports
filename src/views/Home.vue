@@ -1,53 +1,50 @@
 <template>
-  <div>
+  <b-container fluid class="px-5">
     <HomeHeader />
-    <PlaceholderContainer />
-  </div>
+    <NewHome />
+  </b-container>
 </template>
 
 <script>
 import HomeHeader from "@/components/HomeHeader.vue";
-import PlaceholderContainer from "@/components/PlaceholderContainer.vue";
-
+import NewHome from "@/components/NewHome.vue";
 export default {
   name: "Home",
   components: {
     HomeHeader,
-    PlaceholderContainer
-  },
-  mounted() {
-    //do nothing
+    NewHome,
   },
   methods: {
     setTitle: function() {
       document.title = "UPL Esports | Competitive & Inclusive Gaming";
-    }
+    },
   },
   metaInfo: {
+    title: "UPL Esports | Home of Underlords Pro League | Competitive Gaming",
     meta: [
       { name: "twitter:card", content: "summary" }, //need to make all this shit dynamic eventually
       {
         name: "twitter:title",
-        content: "Competitive & Inclusive Gaming | UPL Esports "
+        content: "Competitive & Inclusive Gaming | UPL Esports ",
       },
       {
         name: "twitter:description",
         content:
-          "Homepage for UPL Esports. Discover tournaments & events for Esports."
+          "Homepage for UPL Esports. Discover tournaments & events for Esports.",
       },
       { name: "twitter:image", content: "http://uplesports.com/logo.png" },
       { name: "twitter:site", content: "uplesports" },
       // og
       {
         property: "og:title",
-        content: "Inclusive & Competitive Gaming | UPL Esports"
+        content: "Inclusive & Competitive Gaming | UPL Esports",
       },
       {
         property: "og:image",
-        content: "http://uplesports.com/logo.png"
-      }
-    ]
-  }
+        content: "http://uplesports.com/logo.png",
+      },
+    ],
+  },
 };
 </script>
 <style scoped></style>

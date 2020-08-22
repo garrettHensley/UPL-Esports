@@ -2,13 +2,13 @@
   <b-container>
     <div v-if="article">
       <b-container>
-        <h1 class="display-4 my-1 main">{{article.title}}</h1>
-        <p class="lead my-1 accent">{{article.description}}</p>
+        <h1 class="display-4 my-1 main">{{ article.title }}</h1>
+        <p class="lead my-1 accent">{{ article.description }}</p>
         <p class="text-">
-          <span>{{article.date}}</span> by
+          <span>{{ article.date }}</span> by
           <em>
             <a :href="'http://twitter.com/' + article.author" target="_blank">
-              <strong class="lead main mx-1">{{article.author}}</strong>
+              <strong class="lead main mx-1">{{ article.author }}</strong>
             </a>
           </em>
         </p>
@@ -55,19 +55,19 @@ import VueMarkdown from "vue-markdown";
 
 export default {
   props: {
-    article: Object
+    article: Object,
   },
   data() {
     return {
-      something: "nothing"
+      something: "nothing",
     };
   },
   components: {
-    VueMarkdown
+    VueMarkdown,
   },
   metaInfo() {
     return { title: this.article.title };
-  }
+  },
 };
 </script>
 

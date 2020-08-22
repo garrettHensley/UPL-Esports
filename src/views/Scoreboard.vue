@@ -6,19 +6,21 @@
 </template>
 
 <script>
-import axios from "axios";
+//import axios from "axios";
 
 export default {
   data() {
     return {
       news: null
     };
-  },
+  }
+  /*
   mounted() {
     axios
       .get("http://scoreboard.uplesports.com/api/")
       .then(reponse => (this.news = reponse.data));
   }
+  */
 };
 </script>
 
