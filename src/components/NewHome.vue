@@ -1,16 +1,18 @@
 <template>
-  <div class="text-light">
+  <div class="text-light px-3">
     <b-row align-h="around">
       <b-col class="text-light" cols="12" sm="6">
         <b-row>
           <b-col class>
-            <News />
+            <h1 class="display-4 text-center text-light">News</h1>
+            <NewsContainer />
           </b-col>
         </b-row>
       </b-col>
       <b-col cols="12" sm="6">
         <b-row>
           <b-col>
+            <h1 class="display-4 text-center text-light">Events</h1>
             <Events />
           </b-col>
         </b-row>
@@ -20,11 +22,11 @@
 </template>
 
 <script>
-import News from "@/views/News.vue";
+import NewsContainer from "@/components/NewsContainer.vue";
 import Events from "@/components/Events.vue";
 export default {
   components: {
-    News,
+    NewsContainer,
     Events,
   },
 };

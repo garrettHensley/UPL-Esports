@@ -3,19 +3,21 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
     <Nav />
     <router-view />
+    <Footer />
   </b-container>
 </template>
 
 <script>
 import Nav from "@/components/Nav.vue";
-
+import Footer from "@/components/Footer.vue";
 // Website title
 document.title = "UPL Esports";
 
 export default {
   components: {
-    Nav
-  }
+    Nav,
+    Footer,
+  },
   /*
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
@@ -57,5 +59,8 @@ html a {
 }
 .container-fluid {
   padding: 0 !important;
+}
+.jumbotron {
+  background-color: transparent;
 }
 </style>
