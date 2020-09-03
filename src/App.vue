@@ -1,7 +1,6 @@
 <template>
   <b-container fluid id="app">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
-    <h1>fuck!</h1>
     <Nav />
     <router-view />
     <Footer />
@@ -63,5 +62,14 @@ html a {
 }
 .jumbotron {
   background-color: transparent;
+}
+.card-title {
+  color: #4fc8ff;
+}
+.card-footer {
+  color: #ec00de;
+}
+.card-header {
+  font-size: 1.5em;
 }
 </style>

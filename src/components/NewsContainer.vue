@@ -12,34 +12,29 @@
     </div>
     <div v-else>
       <div>
-        <div>
+        <b-card-group deck>
           <b-container
             v-for="article in news"
             :key="article.index"
-            class="articles border-bottom border-dark hover"
+            class=""
             href="http://google.com"
           >
             <a
               :href="'/news/' + article.id"
               class="text-light text-decoration-none"
             >
-              <b-row>
-                <b-col class="p-1">
-                  <h4 class="">{{ article.title }}</h4>
-                  <p class="lead accent mb-0">{{ article.description }}</p>
-                  <p class="mb-1">
-                    <span>{{ article.date }}</span> by
-                    <em>
-                      <strong class="lead main mx-1">{{
-                        article.author
-                      }}</strong>
-                    </em>
-                  </p>
-                </b-col>
-              </b-row>
+              <b-card :header="article.title" class="mb-2">
+                <p class="lead">{{ article.description }}</p>
+                <p class="mb-0">
+                  <span class="accent">{{ article.date }}</span> by
+                  <em>
+                    <strong class="lead main mx-1">{{ article.author }}</strong>
+                  </em>
+                </p>
+              </b-card>
             </a>
           </b-container>
-        </div>
+        </b-card-group>
       </div>
     </div>
   </b-container>
@@ -50,6 +45,14 @@
   background-color: #2a3032;
   padding-left: 2em;
   padding-bottom: 0.5em;
+}
+.card {
+  min-width: 18rem;
+  background-color: #2a3032;
+  border-radius: 0;
+}
+.card-header {
+  color: #4fc8ff;
 }
 a {
   text-decoration: none;

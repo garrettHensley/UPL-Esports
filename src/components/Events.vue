@@ -64,13 +64,4 @@ export default {
   background-color: #2a3032;
   border-radius: 0;
 }
-.card-title {
-  color: #4fc8ff;
-}
-.card-footer {
-  color: #ec00de;
-}
-.card-header {
-  font-size: 1.5em;
-}
 </style>
