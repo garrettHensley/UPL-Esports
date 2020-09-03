@@ -25,7 +25,7 @@
             >
               <b-row>
                 <b-col class="p-1">
-                  <h1 class="main">{{ article.title }}</h1>
+                  <h4 class="">{{ article.title }}</h4>
                   <p class="lead accent mb-0">{{ article.description }}</p>
                   <p class="mb-1">
                     <span>{{ article.date }}</span> by

@@ -1,6 +1,7 @@
 <template>
   <b-container fluid id="app">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <h1>fuck!</h1>
     <Nav />
     <router-view />
     <Footer />
