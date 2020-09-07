@@ -1,5 +1,5 @@
 <template>
-  <b-container class="text-light">
+  <b-container class="text-light" fluid>
     <!-- 
       If $route.params.id is truthy then <Article>
         find(
@@ -47,7 +47,6 @@
   padding-bottom: 0.5em;
 }
 .card {
-  min-width: 18rem;
   background-color: #2a3032;
   border-radius: 0;
 }

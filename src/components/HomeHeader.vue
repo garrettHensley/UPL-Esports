@@ -1,5 +1,5 @@
 <template>
-  <b-jumbotron class="border-bottom mb-4 text-center">
+  <b-jumbotron class="border-bottom text-center">
     <upl-logo />
     <h2 class="main">Home of Underlords Pro League</h2>
   </b-jumbotron>

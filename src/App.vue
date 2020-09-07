@@ -1,5 +1,5 @@
 <template>
-  <b-container fluid id="app">
+  <b-container fluid id="app" class="text-white">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
     <Nav />
     <router-view />
@@ -54,8 +54,14 @@ html a {
 .main {
   color: #4fc8ff;
 }
+.main-bg {
+  background-color: #4fc8ff;
+}
 .accent {
   color: #ec00de;
+}
+.accent-bg {
+  background-color: #ec00de;
 }
 .container-fluid {
   padding: 0 !important;

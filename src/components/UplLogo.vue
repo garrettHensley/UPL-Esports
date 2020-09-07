@@ -1,9 +1,9 @@
 <template>
-  <b-container id="logo-container">
+  <b-container fluid id="logo-container">
     <!-- Logo and text -->
 
-    <b-img src="../logo.png" id="logo" alt="Logo" />
-    <h1 class="display-3 text-light">Esports</h1>
+    <b-img src="../logo.png" id="logo" alt="Logo" fluid />
+    <h1 class="display-4 text-light">Esports</h1>
   </b-container>
 </template>
 
@@ -16,6 +16,6 @@ export default {};
   padding: 0;
 }
 img {
-  width: 20em;
+  width: 15rem;
 }
 </style>

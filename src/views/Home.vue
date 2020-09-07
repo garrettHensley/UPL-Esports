@@ -1,5 +1,5 @@
 <template>
-  <b-container fluid class="px-5">
+  <b-container fluid>
     <HomeHeader />
     <NewHome />
   </b-container>
