@@ -33,6 +33,11 @@ const routes = [
     component: Rules
   },
   {
+    path: "/heroes",
+    name: "Heroes",
+    component: Heroes
+  },
+  {
     path: "/rules/:id",
     name: "RulesID",
     // route level code-splitting
@@ -51,9 +56,10 @@ const routes = [
       import(/* webpackChunkName: "article" */ "../views/News.vue")
   },
   {
-    path: "/heroes",
-    name: "Heroes",
-    component: Heroes
+    path: "/heroes/:id",
+    name: "HeroesID",
+    component: () =>
+      import(/* webpackChunkName: "heroes" */ "../views/Heroes.vue")
   },
 ];
 
