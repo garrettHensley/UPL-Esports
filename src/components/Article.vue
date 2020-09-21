@@ -1,5 +1,5 @@
 <template>
-  <b-container>
+  <b-container id="article" class="py-1">
     <div v-if="article">
       <b-container>
         <h1 class="display-4 my-1 main">{{ article.title }}</h1>
@@ -14,7 +14,7 @@
         </p>
         <hr />
       </b-container>
-      <b-container id="article" class="py-1">
+      <b-container class="py-1">
         <vue-markdown :source="article.content"></vue-markdown>
       </b-container>
     </div>
@@ -72,11 +72,8 @@ export default {
 </script>
 
 <style scoped>
-.main {
-  color: #4fc8ff;
-}
-.accent {
-  color: #ec00de;
+#article {
+  background: #292828;
 }
 hr {
   border: 0.05em solid #4fc8ff;

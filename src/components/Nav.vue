@@ -1,12 +1,12 @@
 <template>
-  <div>
-    <b-navbar id="nav" class="main">
+  <b-container fluid>
+    <b-navbar id="nav" class="text-light blur" :class="{ 'fixed-top': isHome }">
       <b-navbar-nav>
         <b-nav-item href="#">
-          <router-link to="/" class="main">Home</router-link>
+          <router-link to="/" class="text-white">Home</router-link>
         </b-nav-item>
         <b-nav-item href="#">
-          <router-link to="/news" class="main">News</router-link>
+          <router-link to="/news" class="text-white">News</router-link>
         </b-nav-item>
         <b-nav-item-dropdown text="Rules" right>
           <b-dropdown-item href="../rules/">UPL</b-dropdown-item>
@@ -16,7 +16,7 @@
           <b-dropdown-item href="../rules/amongus">Among Us</b-dropdown-item>
         </b-nav-item-dropdown>
       </b-navbar-nav>
-      <b-navbar-nav class="ml-auto main">
+      <b-navbar-nav class="ml-auto text-white">
         <b-nav-item href="http://twitter.com/uplesports" target="_blank">
           <img
             :src="`${publicPath}twitter.png`"
@@ -41,7 +41,7 @@
         </b-nav-item>
       </b-navbar-nav>
     </b-navbar>
-  </div>
+  </b-container>
 </template>
 
 <script>
@@ -56,17 +56,20 @@ export default {
       publicPath: process.env.BASE_URL,
     };
   },
+  computed: {
+    isHome() {
+      console.log(this.$route.name);
+      return this.$route.name == "Home";
+    },
+  },
 };
 </script>
 
 <style>
-#nav {
-  background-color: #2a3032;
-}
 .nav-image {
   width: 2.2rem;
 }
 .nav-link {
-  color: #4fc8ff !important;
+  color: white !important;
 }
 </style>

@@ -1,10 +1,14 @@
 <template>
-  <b-container fluid id="app" class="text-white">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+  <div>
     <Nav />
-    <router-view />
+
+    <b-container fluid id="app" class="text-white">
+      <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+
+      <router-view />
+    </b-container>
     <Footer />
-  </b-container>
+  </div>
 </template>
 
 <script>
@@ -39,14 +43,20 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 @import "./assets/style.css";
 
+$brand: #4fc8ff;
+$accent: #ec00de;
+$dark-shade: #292828;
+
 html body {
-  background-color: #292828;
+  background: linear-gradient(4deg, $accent 1%, rgba(97, 6, 255, 1) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 html hr {
-  border: 0.05em solid #4fc8ff;
+  border: 0.05em solid $brand;
 }
 html a {
   text-decoration: none;
@@ -61,13 +71,20 @@ html a {
   color: #ec00de;
 }
 .accent-bg {
-  background-color: #ec00de;
+  background-color: $accent;
 }
 .container-fluid {
   padding: 0 !important;
 }
 .jumbotron {
   background-color: transparent;
+}
+.card {
+  background-color: #292828 !important;
+  border-radius: 0;
+  -webkit-box-shadow: 0.7em 0.7em 1em -0.5em rgba(41, 40, 40, 1);
+  -moz-box-shadow: 0.7em 0.7em 1em -0.5em rgba(41, 40, 40, 1);
+  box-shadow: 0.7em 0.7em 1em -0.5em rgba(41, 40, 40, 1);
 }
 .card-title {
   color: #4fc8ff;
@@ -77,5 +94,8 @@ html a {
 }
 .card-header {
   font-size: 1.5em;
+}
+.blur {
+  backdrop-filter: blur(0.2em);
 }
 </style>

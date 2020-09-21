@@ -1,6 +1,7 @@
 <template>
-  <b-container>
-    <h1 class="display-4 text-center main">{{ selected }} Rules</h1>
+  <b-container fluid>
+    <h1 class="display-4 text-center">{{ selected }} Rules</h1>
+
     <rules-section :content="getContent" />
   </b-container>
 </template>

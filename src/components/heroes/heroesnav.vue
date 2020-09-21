@@ -1,11 +1,15 @@
 <template>
   <b-nav pills align="center">
-    <b-nav-item to="./rules" :active="activeItem == 'rules'">Rules</b-nav-item>
-    <b-nav-item to="./bracket" :active="activeItem == 'bracket'"
+    <b-nav-item to="../heroes/rules" :active="activeItem == 'rules'"
+      >Rules</b-nav-item
+    >
+    <b-nav-item to="../heroes/bracket" :active="activeItem == 'bracket'"
       >Bracket</b-nav-item
     >
-    <b-nav-item to="./teams" :active="activeItem == 'teams'">Teams</b-nav-item>
-    <b-nav-item to="./matches" :active="activeItem == 'matches'"
+    <b-nav-item to="../heroes/teams" :active="activeItem == 'teams'"
+      >Teams</b-nav-item
+    >
+    <b-nav-item to="../heroes/matches" :active="activeItem == 'matches'"
       >Match History</b-nav-item
     >
   </b-nav>

@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1 class="display-4 text-center text-light">News</h1>
+    <hr />
     <NewsContainer />
   </div>
 </template>

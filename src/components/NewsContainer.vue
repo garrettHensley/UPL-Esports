@@ -16,7 +16,7 @@
           <b-container
             v-for="article in news"
             :key="article.index"
-            class=""
+            class="listItem"
             href="http://google.com"
           >
             <a
@@ -46,10 +46,7 @@
   padding-left: 2em;
   padding-bottom: 0.5em;
 }
-.card {
-  background-color: #2a3032;
-  border-radius: 0;
-}
+
 .card-header {
   color: #4fc8ff;
 }

@@ -61,7 +61,5 @@ export default {
 }
 .card {
   min-width: 18rem;
-  background-color: #2a3032;
-  border-radius: 0;
 }
 </style>

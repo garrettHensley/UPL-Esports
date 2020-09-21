@@ -1,7 +1,7 @@
 <template>
-  <div class="w-75 mx-auto">
+  <b-container class="p-3 mx-auto rule-section">
     <span v-html="content" />
-  </div>
+  </b-container>
 </template>
 
 <script>
@@ -13,6 +13,13 @@ export default {
 </script>
 
 <style scoped>
+.rule-section {
+  background-color: #292828;
+  border-radius: 0;
+  -webkit-box-shadow: 0.7em 0.7em 1em -0.5em rgba(41, 40, 40, 1);
+  -moz-box-shadow: 0.7em 0.7em 1em -0.5em rgba(41, 40, 40, 1);
+  box-shadow: 0.7em 0.7em 1em -0.5em rgba(41, 40, 40, 1);
+}
 /deep/ li {
   list-style-type: none;
 }

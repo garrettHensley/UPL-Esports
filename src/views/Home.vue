@@ -1,8 +1,8 @@
 <template>
-  <b-container fluid>
-    <HomeHeader />
-    <NewHome />
-  </b-container>
+  <div id="home">
+    <home-header />
+    <new-home />
+  </div>
 </template>
 
 <script>
@@ -47,4 +47,3 @@ export default {
   },
 };
 </script>
-<style scoped></style>
