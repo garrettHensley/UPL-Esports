@@ -1,24 +1,24 @@
 <template>
   <div>
     <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
-    <u-nav />
+    <Nav />
     <b-container fluid id="app" class="text-white">
       <router-view />
     </b-container>
-    <u-footer />
+    <Footer />
   </div>
 </template>
 
 <script>
-import UNav from "@/components/UNav.vue";
-import UFooter from "@/components/UFooter.vue";
+import Nav from "@/components/Nav.vue";
+import Footer from "@/components/Footer.vue";
 // Website title
 document.title = "UPL Esports";
 
 export default {
   components: {
-    UNav,
-    UFooter,
+    Nav,
+    Footer,
   },
   /*
   metaInfo: {
