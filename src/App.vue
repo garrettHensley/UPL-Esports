@@ -1,11 +1,12 @@
 <template>
   <div>
     <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
-    <Nav />
+
     <b-container fluid id="app" class="text-white">
+      <Nav />
       <router-view />
+      <Footer />
     </b-container>
-    <Footer />
   </div>
 </template>
 
