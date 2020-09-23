@@ -1,26 +1,24 @@
 <template>
   <div>
-    <Nav />
-
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <u-nav />
     <b-container fluid id="app" class="text-white">
-      <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
-
       <router-view />
     </b-container>
-    <Footer />
+    <u-footer />
   </div>
 </template>
 
 <script>
-import Nav from "@/components/Nav.vue";
-import Footer from "@/components/Footer.vue";
+import UNav from "@/components/UNav.vue";
+import UFooter from "@/components/UFooter.vue";
 // Website title
 document.title = "UPL Esports";
 
 export default {
   components: {
-    Nav,
-    Footer,
+    UNav,
+    UFooter,
   },
   /*
   metaInfo: {
@@ -44,11 +42,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./assets/style.css";
-
-$brand: #4fc8ff;
-$accent: #ec00de;
-$dark-shade: #292828;
+@import "@/assets/style.scss";
 
 html body {
   background: linear-gradient(4deg, $accent 1%, rgba(97, 6, 255, 1) 100%);
@@ -72,6 +66,9 @@ html a {
 }
 .accent-bg {
   background-color: $accent;
+}
+.shade-bg {
+  background-color: $dark-shade;
 }
 .container-fluid {
   padding: 0 !important;

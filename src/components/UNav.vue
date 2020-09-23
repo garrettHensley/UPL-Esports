@@ -46,6 +46,7 @@
 
 <script>
 export default {
+  name: "u-nav",
   data() {
     return {
       img: {

@@ -24,7 +24,7 @@
               class="text-light text-decoration-none"
             >
               <b-card :header="article.title" class="mb-2">
-                <p class="lead">{{ article.description }}</p>
+                <p class="">{{ article.description }}</p>
                 <p class="mb-0">
                   <span class="accent">{{ article.date }}</span> by
                   <em>

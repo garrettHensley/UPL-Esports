@@ -1,5 +1,5 @@
 <template>
-  <b-container fluid>
+  <b-container class="mb-4" fluid>
     <h1 class="display-4 text-center">{{ selected }} Rules</h1>
 
     <rules-section :content="getContent" />

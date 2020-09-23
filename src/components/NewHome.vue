@@ -5,7 +5,7 @@
         <b-row>
           <b-col class>
             <h1 class="display-4 text-center text-light">News</h1>
-            <NewsContainer />
+            <news-container />
           </b-col>
         </b-row>
       </b-col>
@@ -13,7 +13,7 @@
         <b-row>
           <b-col>
             <h1 class="display-4 text-center text-light">Events</h1>
-            <Events />
+            <events />
           </b-col>
         </b-row>
       </b-col>

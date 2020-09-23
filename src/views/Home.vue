@@ -20,7 +20,7 @@ export default {
     },
   },
   metaInfo: {
-    title: "UPL Esports | Home of Underlords Pro League | Competitive Gaming",
+    title: "UPL Esports | Home of Underlords Pro League | Ranked Among Us",
     meta: [
       { name: "twitter:card", content: "summary" }, //need to make all this shit dynamic eventually
       {
