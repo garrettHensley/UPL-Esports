@@ -1,4 +1,4 @@
-# the-pro-league
+# upl-esports
 
 ## Project setup
 ```
