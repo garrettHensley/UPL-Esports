@@ -7,12 +7,12 @@
 </template>
 
 <script>
-import UplLogo from "@/components/UplLogo.vue";
+import UplLogo from "@/components/UplLogo.vue"
 export default {
     components: {
-        UplLogo
-    }
-};
+        UplLogo,
+    },
+}
 </script>
 
 <style scoped>
@@ -31,7 +31,7 @@ export default {
 .jumbotron {
     z-index: -2;
     background-color: #292828;
-    background: url("~@/assets/img/ulBG.png");
+    background: url("~@/assets/img/ulBG.jpg");
     background-size: cover;
     margin-bottom: 0;
     border-radius: 0;
