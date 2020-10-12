@@ -1,6 +1,6 @@
 <template>
-  <b-container class="mt-4" fluid>
-    <b-jumbotron class="border-top text-center text-light">
+  <b-container id="footer" fluid>
+    <b-jumbotron class="text-center shade-bg text-light">
       <p>© 2020 UPL Esports. All Rights Reserved.</p>
       <p>
         UPL Esports is an independent organization, and is not affiliated with
@@ -16,11 +16,13 @@ export default {
 };
 </script>
 
-<style scoped>
-.border-top {
-  border-top: #ec00de 1px solid !important;
+<style lang="scss" scoped>
+#footer {
+  position: relative !important;
+  bottom: 0;
 }
 .jumbotron {
-  background-color: transparent;
+  background-color: #292828;
+  margin-bottom: 0;
 }
 </style>

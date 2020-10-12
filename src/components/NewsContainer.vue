@@ -16,7 +16,7 @@
           <b-container
             v-for="article in news"
             :key="article.index"
-            class=""
+            class="listItem"
             href="http://google.com"
           >
             <a
@@ -24,7 +24,7 @@
               class="text-light text-decoration-none"
             >
               <b-card :header="article.title" class="mb-2">
-                <p class="lead">{{ article.description }}</p>
+                <p class="">{{ article.description }}</p>
                 <p class="mb-0">
                   <span class="accent">{{ article.date }}</span> by
                   <em>
@@ -46,10 +46,7 @@
   padding-left: 2em;
   padding-bottom: 0.5em;
 }
-.card {
-  background-color: #2a3032;
-  border-radius: 0;
-}
+
 .card-header {
   color: #4fc8ff;
 }

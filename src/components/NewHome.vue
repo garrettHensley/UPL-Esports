@@ -1,11 +1,11 @@
 <template>
-  <div class="text-light px-3">
+  <b-container fluid id="newhome" class="text-light px-3">
     <b-row align-h="around">
       <b-col class="text-light" cols="12" sm="6">
         <b-row>
           <b-col class>
             <h1 class="display-4 text-center text-light">News</h1>
-            <NewsContainer />
+            <news-container />
           </b-col>
         </b-row>
       </b-col>
@@ -13,12 +13,12 @@
         <b-row>
           <b-col>
             <h1 class="display-4 text-center text-light">Events</h1>
-            <Events />
+            <events />
           </b-col>
         </b-row>
       </b-col>
     </b-row>
-  </div>
+  </b-container>
 </template>
 
 <script>
@@ -31,7 +31,15 @@ export default {
   },
 };
 </script>
-<style>
+<style lang="scss">
+$brand: #4fc8ff;
+$accent: #ec00de;
+$dark-shade: #292828;
+
+#newhome {
+  z-index: 2 !important;
+  background: linear-gradient(4deg, $accent 1%, rgb(97, 6, 255) 100%);
+}
 .borderme {
   border: 1px solid #ec00de !important;
 }

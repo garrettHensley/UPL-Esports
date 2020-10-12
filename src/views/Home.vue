@@ -1,8 +1,8 @@
 <template>
-  <b-container fluid>
-    <HomeHeader />
-    <NewHome />
-  </b-container>
+  <div id="home">
+    <home-header />
+    <new-home />
+  </div>
 </template>
 
 <script>
@@ -20,7 +20,7 @@ export default {
     },
   },
   metaInfo: {
-    title: "UPL Esports | Home of Underlords Pro League | Competitive Gaming",
+    title: "UPL Esports | Home of Underlords Pro League | Ranked Among Us",
     meta: [
       { name: "twitter:card", content: "summary" }, //need to make all this shit dynamic eventually
       {
@@ -47,4 +47,3 @@ export default {
   },
 };
 </script>
-<style scoped></style>
