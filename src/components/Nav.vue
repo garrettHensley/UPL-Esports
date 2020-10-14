@@ -1,5 +1,5 @@
 <template>
-<b-container fluid>
+<div>
     <b-navbar id="nav" toggleable="sm" class="text-light" :class="{ 'fixed-top': isHome }">
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
@@ -33,7 +33,7 @@
             </b-navbar-nav>
         </b-collapse>
     </b-navbar>
-</b-container>
+</div>
 </template>
 
 <script>

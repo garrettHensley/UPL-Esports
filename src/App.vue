@@ -2,25 +2,25 @@
 <div>
     <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
 
-    <b-container fluid id="app" class="text-white">
+    <div id="app" class="text-white">
         <Nav />
         <router-view />
         <Footer />
-    </b-container>
+    </div>
 </div>
 </template>
 
 <script>
-import Nav from "@/components/Nav.vue";
-import Footer from "@/components/Footer.vue";
+import Nav from "@/components/Nav.vue"
+import Footer from "@/components/Footer.vue"
 // Website title
-document.title = "UPL Esports";
+document.title = "UPL Esports"
 
 export default {
     components: {
         Nav,
-        Footer
-    }
+        Footer,
+    },
     /*
     metaInfo: {
       // if no subcomponents specify a metaInfo.title, this title will be used
@@ -39,7 +39,7 @@ export default {
       ]
     }
     */
-};
+}
 </script>
 
 <style lang="scss">
@@ -77,10 +77,6 @@ html a {
 
 .shade-bg {
     background-color: $dark-shade;
-}
-
-.container-fluid {
-    padding: 0 !important;
 }
 
 .jumbotron {
